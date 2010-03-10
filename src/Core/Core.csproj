@@ -35,6 +35,10 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -48,6 +52,11 @@
     <Compile Include="..\AssemblyInfo.cs">
       <Link>AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="AuthenticationSettings.cs" />
+    <Compile Include="ControllerRule.cs" />
+    <Compile Include="IAuthenticationSettings.cs" />
+    <Compile Include="IControllerRule.cs" />
+    <Compile Include="IRoleComparer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
